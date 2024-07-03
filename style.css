@@ -4,17 +4,11 @@ body{
     background-size: cover;
     height: 100vh;
     width: 100%;
-    position: relative;body{
-    background-image: url('IMG_20240630_000350.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
     position: relative;
     margin: 0;
     padding: 0;
-}
-.overlay{
+  }
+  .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -22,8 +16,8 @@ body{
     width: 100%;
     background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
     z-index: 1;
-}
-.content{
+  }
+  .content{
     position: relative;
     z-index: 2;
     height: 100%;
@@ -33,75 +27,32 @@ body{
     justify-content: center;
     text-align: center;
     color: white;
-}
-.navbar{
-    justify-content: center;
-}
-.logo{
-    color: white;
-}
-.SiteName{
-    font-size: 100px;
-    font-weight: bold;
-}
-.btn{
-    color: aliceblue;
-}
-
-
-
-
-
-
-
-
-@media screen (min-width:780px){
-    
-}
-    margin: 0;
-    padding: 0;
-}
-.overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+  }
+  .navbar{
+    background: rgba(0, 0, 0, 0.5);
     width: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-    z-index: 1;
-}
-.content{
-    position: relative;
-    z-index: 2;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  }
+  .logo{
     color: white;
-}
-.navbar{
-    justify-content: center;
-}
-.logo{
-    color: white;
-}
-.SiteName{
+  }
+  .SiteName{
     font-size: 100px;
     font-weight: bold;
-}
-.btn{
+  }
+  .btn{
     color: aliceblue;
-}
+    border-color: aliceblue;
+  }
 
-
-
-
-
-
-
-
-@media screen (min-width:780px){
-    
-}
+  /* Mobile View */
+  @media (max-width: 600px) {
+    .SiteName{
+      font-size: 50px; /* Reduce font size for smaller screens */
+    }
+    .content{
+      padding: 10px; /* Add some padding to avoid content touching the edges */
+    }
+    .btn{
+      font-size: 14px; /* Adjust button font size */
+    }
+  }
